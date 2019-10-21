@@ -1,0 +1,218 @@
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v13/TUZyzwprpvBS1izr_vOECuSa.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+p,
+div,
+header,
+footer,
+section,
+nav {
+  border: 1px solid gray;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 7.2rem;
+}
+h2 {
+  font-size: 6rem;
+}
+h3 {
+  font-size: 4.8rem;
+}
+h4 {
+  font-size: 3.6rem;
+}
+h5 {
+  font-size: 3rem;
+}
+h6 {
+  font-size: 2.4rem;
+}
+p {
+  font-size: 1.6rem;
+}
+.landing-page {
+  background-image: url("../img/landing-page-bg.jpg");
+  background-position: center;
+  left: -94.4%;
+  right: -94.4%;
+  top: 0%;
+  bottom: 0%;
+  color: #FFFFFF;
+}
+.landing-page .main-container {
+  margin: 20% 0 20% 0;
+}
+.landing-page .main-container h1,
+.landing-page .main-container h2,
+.landing-page .main-container h3,
+.landing-page .main-container h4 {
+  font-family: 'Amatic SC', cursive;
+  padding: 20px 0 20px 0;
+  text-align: center;
+}
+.landing-page .sign-up-button {
+  margin-top: 10%;
+  text-align: center;
+}
+.landing-page .sign-up-button .signup {
+  background-color: #3C38FC;
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-radius: 20px;
+  margin: 0 auto;
+  border: 2px solid #3C38FC;
+  padding: 10px 30px 10px 30px;
+}
+.landing-page .sign-up-button p {
+  padding: 10px;
+}
+header {
+  background-color: navy;
+  color: #FFFFFF;
+}
+header h1 {
+  font-size: 2.5rem;
+  padding: 10px 0 10px 20px;
+}
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+}
+.about-us-content .team-member {
+  margin: 5% 2% 5% 2%;
+  padding: 3%;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 2px lightgray;
+}
+.about-us-content .team-member h3 {
+  font-size: 2.5rem;
+}
+.about-us-content .team-member h4 {
+  font-size: 1.4rem;
+}
+.about-us-content .team-member p {
+  color: gray;
+  margin: 5% 0 5% 0;
+}
+.about-us-content .team-member img {
+  height: 150px;
+  width: 150px;
+}
