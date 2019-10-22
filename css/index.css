@@ -1,3 +1,7 @@
+.box-font {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
 @font-face {
   font-family: 'Amatic SC';
   font-style: normal;
@@ -291,6 +295,40 @@ a:visited {
 .about-us-content .team-member img {
   height: 150px;
   width: 150px;
+}
+.main-page-header h1 {
+  background-color: #0905D5;
+}
+.main-page-header img {
+  width: 100%;
+}
+.content {
+  padding: 2%;
+}
+.content .section-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.content .section-content .explore-img {
+  width: 40%;
+  border-radius: 10px;
+  background-color: gray;
+  margin: 3%;
+  padding: 10% 5% 10% 5%;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
+.content .section-content .world-img {
+  width: 40%;
+  border-radius: 10px;
+  background-color: gray;
+  margin: 3%;
+  padding: 5%;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #FFFFFF;
 }
 nav .nav-mobile-site {
   display: flex;
