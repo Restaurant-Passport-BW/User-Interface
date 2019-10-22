@@ -10,8 +10,8 @@ nav{
         } // closes media desktop for nav-mobile-site
 
         .logo{
-            width: 20%;
-            height: 20%;
+            width: 18%;
+            height: 18%;
             background-image: url'(../img/fp-logo.png)';
 
             img{
@@ -30,7 +30,7 @@ nav{
         }
 
         .nav-opener{
-            width: 10%;
+            width: 12%;
             height: 10%;
             margin: 3%;
             display:flex;
@@ -48,6 +48,53 @@ nav{
 
     .nav-desktop-site{
         display: none;
+
+        @media @desktop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            width: 30%;
+            height: 30%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .title{
+            h1{
+                font-family: @specialfont;
+                color: black;
+                font-size: 6rem;
+                padding: 0;
+            }
+        }
+        
+        .nav-desktop-header-and-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            text-align: center;
+
+            .menu{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: flex-end;
+                width: 100%;
+                a{
+                    width: 200px;
+                    font-size: 2rem;
+                    padding: 1%;
+                    margin: 2%;
+                }
+            }
+        }
 
     }//closes nav-desktop-site
 

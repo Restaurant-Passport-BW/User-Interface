@@ -103,21 +103,6 @@ video {
 * {
   box-sizing: border-box;
 }
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-a,
-p,
-div,
-header,
-footer,
-section,
-nav {
-  border: 1px solid gray;
-}
 html {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -161,16 +146,12 @@ a:visited {
 }
 .landing-page {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/landing-page-bg.jpg");
-  background-size: 350%;
+  background-size: cover;
   position: relative;
   background-position: center;
+  background-repeat: no-repeat;
   color: #FFFFFF;
-}
-@media (min-width: 900px) {
-  .landing-page {
-    background-size: 150%;
-    position: relative;
-  }
+  background-attachment: fixed;
 }
 .landing-page .main-container {
   margin: 30% 0 20% 0;
@@ -227,11 +208,17 @@ a:visited {
   font-size: 1.4rem;
 }
 .about-us-header h1 {
-  background-color: navy;
+  background-color: #055492;
+}
+.about-us-header p {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
 }
 .about-us-content {
   display: flex;
   flex-direction: column;
+  padding: 3%;
 }
 @media (min-width: 900px) {
   .about-us-content {
@@ -273,8 +260,8 @@ nav .nav-mobile-site {
   }
 }
 nav .nav-mobile-site .logo {
-  width: 20%;
-  height: 20%;
+  width: 18%;
+  height: 18%;
   background-image: url '(../img/fp-logo.png)';
 }
 nav .nav-mobile-site .logo img {
@@ -288,7 +275,7 @@ nav .nav-mobile-site .title h1 {
   padding: 0;
 }
 nav .nav-mobile-site .nav-opener {
-  width: 10%;
+  width: 12%;
   height: 10%;
   margin: 3%;
   display: flex;
@@ -301,4 +288,46 @@ nav .nav-mobile-site .nav-opener .nav-toggle-line {
 }
 nav .nav-desktop-site {
   display: none;
+}
+@media (min-width: 900px) {
+  nav .nav-desktop-site {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+nav .nav-desktop-site .logo {
+  width: 30%;
+  height: 30%;
+}
+nav .nav-desktop-site .logo img {
+  width: 100%;
+  height: 100%;
+}
+nav .nav-desktop-site .title h1 {
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  font-size: 6rem;
+  padding: 0;
+}
+nav .nav-desktop-site .nav-desktop-header-and-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+nav .nav-desktop-site .nav-desktop-header-and-menu .menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 100%;
+}
+nav .nav-desktop-site .nav-desktop-header-and-menu .menu a {
+  width: 200px;
+  font-size: 2rem;
+  padding: 1%;
+  margin: 2%;
 }
