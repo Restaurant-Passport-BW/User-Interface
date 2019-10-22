@@ -326,9 +326,53 @@ nav .nav-mobile-site .nav-opener {
   flex-direction: column;
   align-content: center;
 }
+nav .nav-mobile-site .nav-opener .nav-opener:hover {
+  background-color: lightgray;
+}
 nav .nav-mobile-site .nav-opener .nav-toggle-line {
   border-bottom: 3px solid gray;
   padding: 10%;
+}
+nav .nav-mobile-site .mob-sidenav {
+  height: 100%;
+  width: 0;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  position: fixed;
+  background-color: #222222;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding: 3%;
+  cursor: pointer;
+}
+nav .nav-mobile-site .mob-sidenav a {
+  padding: 1%;
+  text-decoration: none;
+  font-size: 2rem;
+  color: gray;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid gray;
+}
+nav .nav-mobile-site .mob-sidenav a:hover {
+  color: white;
+}
+nav .nav-mobile-site .mob-sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+nav .nav-mobile-site .mob-sidenav .user-pic {
+  height: 200px;
+  width: 200px;
+  padding: 20px 0 20px 0;
+  margin-bottom: 30px;
+}
+nav .nav-mobile-site .mob-sidenav .user-pic img {
+  width: 100%;
 }
 nav .nav-desktop-site {
   display: none;

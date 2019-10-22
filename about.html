@@ -11,17 +11,36 @@
 
 <body class="about-us">
     <div class="container">
+
         <nav>
         <div class="nav-mobile-site">
             <span class="logo">
                 <img src="img/fp-logo.png" alt="restaurant passport logo">
             </span>
             <span class="title"><h1>RESTAURANT PASSPORT</h1></span>
-            <span class="nav-opener">
+            <span class="nav-opener" onclick="openNav()">
                 <span class="nav-toggle-line"></span>
                 <span class="nav-toggle-line"></span>
                 <span class="nav-toggle-line"></span>
             </span>
+            <div class="mob-sidenav" id="mob-sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <span class="user-pic"><img src="img/avatar.png" alt="User pic"></span>
+                <a href="#">Home</a>
+                <a href="#">My Passport</a>
+                <a href="#">Around the World</a>
+                <a href="#">Settings</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <script>
+                    function openNav() {
+                      document.getElementById("mob-sidenav").style.width = "250px";
+                    }
+                    
+                    function closeNav() {
+                      document.getElementById("mob-sidenav").style.width = "0";
+                    }
+            </script>
         </div>
         <div class="nav-desktop-site">
             <span class="logo">
@@ -31,13 +50,15 @@
             <span class="title"><h1>RESTAURANT PASSPORT</h1></span>
             <span class="menu">
                 <a href="#">Home</a>
-                <a href="#">Sign Up</a>
-                <a href="#">Log In</a>
+                <a href="#">My Passport</a>
+                <a href="#">Around the World</a>
+                <a href="#">Settings</a>
                 <a href="about.html">About Us</a>
             </span>
             </span>
         </div>
         </nav>
+
         <header class="about-us-header">
             <h1>About Us</h1>
             <p>Meet the team behind this awesomeness!</p>
