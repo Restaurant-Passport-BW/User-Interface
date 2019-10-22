@@ -19,27 +19,28 @@
                 <span class="title">
                     <h1>RESTAURANT PASSPORT</h1>
                 </span>
-                <span class="nav-opener" onclick="openNav()">
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                </span>
-                <div class="mob-sidenav" id="mob-sidenav">
+                <div class="mob-sidenav" id="mymob-sidenav">
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <span class="user-pic"><img src="img/avatar.png" alt="User pic"></span>
+                    <div class="user-pic"><img src="img/avatar.png" alt="User pic"></div>
                     <a href="#">Home</a>
                     <a href="#">My Passport</a>
                     <a href="#">Around the World</a>
                     <a href="#">Settings</a>
                     <a href="about.html">About Us</a>
                 </div>
+                <span class="nav-opener" onclick="openNav()">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </span>
+
                 <script>
                     function openNav() {
-                        document.getElementById("mob-sidenav").style.width = "250px";
+                        document.getElementById("mymob-sidenav").style.width = "250px";
                     }
 
                     function closeNav() {
-                        document.getElementById("mob-sidenav").style.width = "0";
+                        document.getElementById("mymob-sidenav").style.width = "0";
                     }
                 </script>
             </div>
@@ -108,40 +109,41 @@
                             <p>Not so detailed description to atract user to this type of activity</p>
                         </div>
                         <div class="icon-and-button">
-                                <span class="money-and-car">
-                                        <span class="money-icon">
-                                        <img src="img/money_sign.png" alt="yellow money sign" class="money">
-                                        </span>
-                                        <span class="car-icon">
-                                        <img src="img/car.png" alt="black car sign" class="car">
-                                        </span>
-                                    </span>
-                                        <span class="readmore-button">
-                                            <button class="readmore">Read More</button>
-                                        </span>
+                            <span class="money-and-car">
+                                <span class="money-icon">
+                                    <img src="img/money_sign.png" alt="yellow money sign" class="money">
+                                </span>
+                                <span class="car-icon">
+                                    <img src="img/car.png" alt="black car sign" class="car">
+                                </span>
+                            </span>
+                            <span class="readmore-button">
+                                <button class="readmore">Read More</button>
+                            </span>
                         </div>
                     </div>
                     <div class="restaurant-box" id="two">
                         <img src="img/restaurant2.jpg" alt="the front of a restaurant at night">
                         <div class="activity-text">
-                                <p class="activity">Activity type</p>
-                                <h5>Main Title</h5>
-                                <p class="activity-detail">Not so detailed description to atract user to this type of activity</p>
-                            </div>
-                            <div class="icon-and-button">
-                                <span class="money-and-car">
-                                    <span class="money-icon">
+                            <p class="activity">Activity type</p>
+                            <h5>Main Title</h5>
+                            <p class="activity-detail">Not so detailed description to atract user to this type of
+                                activity</p>
+                        </div>
+                        <div class="icon-and-button">
+                            <span class="money-and-car">
+                                <span class="money-icon">
                                     <img src="img/money_sign.png" alt="yellow money sign" class="money">
-                                    </span>
-                                    <span class="car-icon">
-                                    <img src="img/car.png" alt="black car sign" class="car">
-                                    </span>
                                 </span>
-                                    <span class="readmore-button">
-                                        <button class="readmore">Read More</button>
-                                    </span>
-                                
-                            </div>
+                                <span class="car-icon">
+                                    <img src="img/car.png" alt="black car sign" class="car">
+                                </span>
+                            </span>
+                            <span class="readmore-button">
+                                <button class="readmore">Read More</button>
+                            </span>
+
+                        </div>
                     </div>
                 </div>
             </section>

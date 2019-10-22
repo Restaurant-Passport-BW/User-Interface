@@ -30,20 +30,21 @@ nav{
         }
 
         .nav-opener{
-            width: 12%;
+            width: 7%;
             height: 10%;
             margin: 3%;
             display:flex;
             flex-direction:column;
             align-content: center;
+            cursor: pointer;
 
             .nav-opener:hover{
                 background-color: lightgray;
             }
 
             .nav-toggle-line{
-                border-bottom: 3px solid gray;
-                padding: 10%;
+                border-bottom: 2px solid gray;
+                padding: 7%;
             }
         }// close nav-opener
 
@@ -57,13 +58,12 @@ nav{
             background-color: #222222;
             overflow-x: hidden;
             transition: 0.5s;
-            padding: 3%;
-            cursor: pointer;
+            padding-top: 5%;
 
             a{
-                padding: 1%;
+                padding: 5% 2% 2% 10%;
                 text-decoration: none;
-                font-size: 2rem;
+                font-size: 1.6rem;
                 color: gray;
                 display: block;
                 transition: 0.3s;
@@ -77,10 +77,11 @@ nav{
             .closebtn {
                 position: absolute;
                 top: 0;
-                right: 25px;
-                font-size: 36px;
-                margin-left: 50px;
-              }
+                right: 0;
+                font-size: 3.6rem;
+                margin-right: 0;
+                border-bottom: 0;
+            }
 
             .user-pic{
                 height: 100px;
