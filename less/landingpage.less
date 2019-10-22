@@ -5,13 +5,22 @@
           rgba(0, 0, 0, 0.4)
         ),
         url("../img/landing-page-bg.jpg");
-    background-size: 300%;
+    background-size: 350%;
     position: relative;
     background-position: center;
     color: @neutral6;
+
+    @media @desktop{
+        background-size: 150%;
+        position: relative;
+    }
     
     .main-container{
         margin: 30% 0 20% 0;
+
+        @media @desktop{
+            margin: 10% auto;
+        }
 
         h1{
             .hx(6rem);
