@@ -1,5 +1,5 @@
 .box-font {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #FFFFFF;
 }
 @font-face {
@@ -244,15 +244,16 @@ a:visited {
   }
 }
 .container h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 5px 0 5px 20px;
   color: #FFFFFF;
 }
 .container h2,
 .container h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
-.container h4 {
+.container h4,
+.container h5 {
   font-size: 1.4rem;
 }
 .about-us-header h1 {
@@ -305,22 +306,33 @@ a:visited {
 .content {
   padding: 2%;
 }
+.content .stamp {
+  width: 100%;
+  max-height: 10%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 2px 2px lightgray;
+}
+.content .stamp img {
+  width: 100%;
+  max-height: 10%;
+  border-radius: 20px;
+}
+.content section {
+  padding: 5%;
+}
 .content .section-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
 .content .section-content .explore-img {
-  width: 40%;
+  width: 46%;
   border-radius: 10px;
-  margin: 3%;
+  margin: 1.5% 0 1.5% 0;
   padding: 10% 5% 10% 5%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #FFFFFF;
-}
-.content .section-content img {
-  max-width: 70%;
 }
 .content .section-content #popular {
   background-position: center;
@@ -407,12 +419,12 @@ a:visited {
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-china.png");
 }
 .content .section-content .world-img {
-  width: 40%;
+  width: 46%;
   border-radius: 10px;
-  margin: 3%;
+  margin: 1.5% 0 1.5% 0;
   padding: 3%;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #FFFFFF;
 }
 .content .section-content #popular {
@@ -498,6 +510,21 @@ a:visited {
   background-repeat: no-repeat;
   position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-china.png");
+}
+.content .section-content .restaurant-box {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.5% 0 1.5% 0;
+  padding: 0;
+  text-align: center;
+  height: 40%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0px 0px 2px 2px lightgray;
+}
+.content .section-content .restaurant-box img {
+  max-width: 100%;
 }
 nav .nav-mobile-site {
   display: flex;
