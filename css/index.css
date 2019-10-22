@@ -147,24 +147,38 @@ h6 {
 p {
   font-size: 1.6rem;
 }
+a {
+  color: #C0BFFD;
+  text-decoration: none;
+}
+a:hover {
+  color: #C0BFFD;
+  text-decoration: none;
+}
+a:visited {
+  color: #C0BFFD;
+  text-decoration: none;
+}
 .landing-page {
   background-image: url("../img/landing-page-bg.jpg");
+  background-size: 300%;
+  position: relative;
   background-position: center;
-  left: -94.4%;
-  right: -94.4%;
-  top: 0%;
-  bottom: 0%;
   color: #FFFFFF;
 }
 .landing-page .main-container {
-  margin: 20% 0 20% 0;
+  margin: 30% 0 20% 0;
 }
-.landing-page .main-container h1,
-.landing-page .main-container h2,
-.landing-page .main-container h3,
-.landing-page .main-container h4 {
+.landing-page .main-container h1 {
+  font-size: 6rem;
   font-family: 'Amatic SC', cursive;
-  padding: 20px 0 20px 0;
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+.landing-page .main-container h2 {
+  font-size: 3.6rem;
+  font-family: 'Amatic SC', cursive;
+  padding: 15px 0 15px 0;
   text-align: center;
 }
 .landing-page .sign-up-button {
@@ -183,17 +197,37 @@ p {
 .landing-page .sign-up-button p {
   padding: 10px;
 }
-header {
-  background-color: navy;
+@media (min-width: 900px) {
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+.container h1 {
+  font-size: 2.5rem;
+  padding: 5px 0 5px 20px;
   color: #FFFFFF;
 }
-header h1 {
+.container h2,
+.container h3 {
   font-size: 2.5rem;
-  padding: 10px 0 10px 20px;
+}
+.container h4 {
+  font-size: 1.4rem;
+}
+.about-us-header h1 {
+  background-color: navy;
 }
 .about-us-content {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 900px) {
+  .about-us-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .about-us-content .team-member {
   margin: 5% 2% 5% 2%;
@@ -202,11 +236,11 @@ header h1 {
   border-radius: 3px;
   box-shadow: 0px 0px 2px 2px lightgray;
 }
-.about-us-content .team-member h3 {
-  font-size: 2.5rem;
-}
-.about-us-content .team-member h4 {
-  font-size: 1.4rem;
+@media (min-width: 900px) {
+  .about-us-content .team-member {
+    width: 40%;
+    margin: 3%;
+  }
 }
 .about-us-content .team-member p {
   color: gray;

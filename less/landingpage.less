@@ -1,18 +1,18 @@
 .landing-page{
     background-image: url("../img/landing-page-bg.jpg");
+    background-size: 300%;
+    position: relative;
     background-position: center;
-    left: -94.4%;
-    right: -94.4%;
-    top: 0%;
-    bottom: 0%;
     color: @neutral6;
     
     .main-container{
-        margin: 20% 0 20% 0;
-        h1,h2,h3,h4{
-            font-family: @specialfont;
-            padding: 20px 0 20px 0;
-            .text-center();
+        margin: 30% 0 20% 0;
+
+        h1{
+            .hx(6rem);
+        }
+        h2{
+            .hx(3.6rem);
         }
     }
 
@@ -32,4 +32,5 @@
             padding: 10px;
         }
     }
+
 }

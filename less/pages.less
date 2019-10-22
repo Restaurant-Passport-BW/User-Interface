@@ -1,0 +1,61 @@
+
+//main container
+.container{
+    @media @desktop{
+        width: 60%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 2.5rem;
+        padding: 5px 0 5px 20px;
+        color: @neutral6;
+    }
+    h2,h3{
+        font-size: 2.5rem;
+    }
+    h4{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+//about us page
+.about-us-header{
+    h1{
+        background-color: navy;
+    }
+}
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+
+    @media @desktop{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member{
+        margin: 5% 2% 5% 2%;
+        padding: 3%;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px 2px lightgray;
+
+        @media @desktop{
+            width: 40%;
+            margin: 3%;
+        }
+
+        p{
+            color: gray;
+            margin: 5% 0 5% 0;
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+
+    }
+}
