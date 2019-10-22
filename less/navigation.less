@@ -1,0 +1,54 @@
+nav{
+    .nav-mobile-site{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media @desktop{
+            display: none;
+        } // closes media desktop for nav-mobile-site
+
+        .logo{
+            width: 20%;
+            height: 20%;
+            background-image: url'(../img/fp-logo.png)';
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }//closes logo
+
+        .title{
+            h1{
+                font-family: @specialfont;
+                color: black;
+                font-size: 3rem;
+                padding: 0;
+            }
+        }
+
+        .nav-opener{
+            width: 10%;
+            height: 10%;
+            margin: 3%;
+            display:flex;
+            flex-direction:column;
+            align-content: center;
+
+            .nav-toggle-line{
+                border-bottom: 3px solid gray;
+                padding: 10%;
+            }
+        }
+        
+    }// closes nav-mobile-site
+
+
+    .nav-desktop-site{
+        display: none;
+
+    }//closes nav-desktop-site
+
+}//closes nav
