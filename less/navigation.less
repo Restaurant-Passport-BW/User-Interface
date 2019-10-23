@@ -189,16 +189,7 @@ nav{
 
     }//closes nav-desktop-site
 
-    .landing-bottom-nav{
-        display: none;
-        @media @desktop{
-            display: flex;
-            justify-content: space-around;
-            font-size: 3rem;
-            background-color: neutral3;
-            color: @accent3;
-        }
-    }
+
 
 }//closes nav
 
@@ -206,12 +197,14 @@ nav{
 //every page header
 .header{
     position: relative;
+    max-height: 100vh;
+    overflow: hidden;
 
     h1{
         background-color: @primary1;
 
         @media @tablet{
-            font-size: 4.8rem;
+            font-size: 3.6rem;
             bottom: 2%;
             left: 2%;
             position: absolute;
@@ -226,6 +219,7 @@ nav{
 
     img{
         width: 100%;
+
     }
 
     .checktours-button{
@@ -233,12 +227,9 @@ nav{
         bottom: 3%;
         right: 3%;
         .checktours{
-            background-color: @primary2;
+            .button-radius(20px);
             font-size: 1.4rem;
-            color: @neutral6;
             margin: 0 auto;
-            border: 2px solid @primary2;
-            border-radius: 20px;
             padding: 10px;
 
             @media @tablet{

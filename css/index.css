@@ -167,9 +167,9 @@ a:visited {
 }
 .landing-page .sign-up-button .signup {
   background-color: #3C38FC;
-  font-size: 2rem;
   color: #FFFFFF;
   border-radius: 20px;
+  font-size: 2rem;
   margin: 0 auto;
   border: 2px solid #3C38FC;
   padding: 10px 30px 10px 30px;
@@ -265,6 +265,7 @@ a:visited {
   box-shadow: 0px 0px 2px 2px lightgray;
 }
 .about-us-content .team-member .member-text {
+  text-align: left;
   padding: 3% 0 5% 0;
 }
 @media (min-width: 800px) {
@@ -279,6 +280,7 @@ a:visited {
 }
 .about-us-content .team-member .pic-and-stamp {
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -286,8 +288,14 @@ a:visited {
   width: 50%;
 }
 .about-us-content .team-member .pic-and-stamp .pass-stamp {
-  width: 40%;
-  height: auto;
+  width: 50%;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: rotate(35deg);
+}
+.about-us-content .team-member #mashima {
+  transform: rotate(65deg);
 }
 .about-us-content .team-member p {
   color: gray;
@@ -312,10 +320,7 @@ a:visited {
 }
 .info p {
   font-size: 2.2rem;
-}
-p {
   text-align: center;
-  padding: 2%;
 }
 section {
   margin: 3%;
@@ -354,13 +359,13 @@ section {
 .content .stamp {
   width: 100%;
   max-height: 10%;
+  overflow: hidden;
   margin: 3% auto;
-  box-shadow: 0px 0px 2px 2px lightgray;
-}
-.content .stamp img {
-  width: 100%;
-  max-height: 10%;
+  box-shadow: 0px 0px 5px 5px lightgray;
   border-radius: 20px;
+}
+.content img {
+  width: 100%;
 }
 .content section {
   padding: 5%;
@@ -389,91 +394,92 @@ section {
     width: 22%;
     border-radius: 5px;
     padding: 5% 2% 5% 2%;
+    font-size: 1.8rem;
   }
 }
 .content .section-content #popular {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/popular-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #tours {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/tour-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #tasting {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/tasting-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #wine-beer {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/wine-beer-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #mexico {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-mexico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #italy {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-italy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #usa {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-usa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #germany {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-germany.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #pr {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-puertorico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #india {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-india.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #greece {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-greece.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #china {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-china.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content .world-img {
   width: 46%;
@@ -484,89 +490,94 @@ section {
   font-size: 1.4rem;
   color: #FFFFFF;
 }
+@media (min-width: 800px) {
+  .content .section-content .world-img {
+    font-size: 2rem;
+  }
+}
 .content .section-content #popular {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/popular-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #tours {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/tour-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #tasting {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/tasting-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #wine-beer {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/wine-beer-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #mexico {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-mexico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #italy {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-italy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #usa {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-usa.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #germany {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-germany.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #pr {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-puertorico.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #india {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-india.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #greece {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-greece.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content #china {
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
   background: linear-gradient(rgba(201, 200, 200, 0.4), rgba(175, 172, 172, 0.4)), url("../img/flag-china.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
 }
 .content .section-content .restaurant-box {
   width: 100%;
@@ -576,8 +587,9 @@ section {
   text-align: center;
   height: 40%;
   border-radius: 15px;
+  overflow: hidden;
   text-align: left;
-  box-shadow: 0px 0px 2px 2px lightgray;
+  box-shadow: 0px 0px 5px 5px lightgray;
   margin: 3% 0 3% 0;
 }
 .content .section-content .restaurant-box img {
@@ -602,16 +614,22 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2%;
+  padding: 3%;
+  align-items: center;
+}
+.content .section-content .restaurant-box .icon-and-button .money-and-car {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 .content .section-content .restaurant-box .readmore {
   background-color: #3C38FC;
-  font-size: 1.4rem;
   color: #FFFFFF;
-  margin: 0 auto;
-  border: 2px solid #3C38FC;
   border-radius: 5px;
-  padding: 10px 10px 10px 10px;
+  border: 2px solid #3C38FC;
+  font-size: 1.4rem;
+  padding: 10px;
 }
 .content .section-content .restaurant-box p {
   padding: 5px;
@@ -786,27 +804,17 @@ nav .nav-desktop-site {
     font-size: 1.7rem;
   }
 }
-nav .landing-bottom-nav {
-  display: none;
-}
-@media (min-width: 1000px) {
-  nav .landing-bottom-nav {
-    display: flex;
-    justify-content: space-around;
-    font-size: 3rem;
-    background-color: neutral3;
-    color: #FFF8E7;
-  }
-}
 .header {
   position: relative;
+  max-height: 100vh;
+  overflow: hidden;
 }
 .header h1 {
   background-color: #0905D5;
 }
 @media (min-width: 800px) {
   .header h1 {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
     bottom: 2%;
     left: 2%;
     position: absolute;
@@ -828,11 +836,11 @@ nav .landing-bottom-nav {
 }
 .header .checktours-button .checktours {
   background-color: #3C38FC;
-  font-size: 1.4rem;
   color: #FFFFFF;
-  margin: 0 auto;
-  border: 2px solid #3C38FC;
   border-radius: 20px;
+  border: 2px solid #3C38FC;
+  font-size: 1.4rem;
+  margin: 0 auto;
   padding: 10px;
 }
 @media (min-width: 800px) {
