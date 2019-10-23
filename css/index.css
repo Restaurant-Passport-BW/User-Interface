@@ -268,7 +268,7 @@ a:visited {
 }
 @media (min-width: 1000px) {
   .container .contentainer {
-    width: 60%;
+    width: 70%;
   }
 }
 .about-us-content {
@@ -651,6 +651,7 @@ nav .nav-mobile-site .mob-sidenav {
 }
 nav .nav-mobile-site .mob-sidenav a {
   padding: 5% 2% 2% 10%;
+  margin: 0 5% 0 5%;
   text-decoration: none;
   font-size: 1.6rem;
   color: gray;
@@ -663,20 +664,26 @@ nav .nav-mobile-site .mob-sidenav a:hover {
 }
 nav .nav-mobile-site .mob-sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 0%;
+  right: 5%;
   font-size: 3.6rem;
   margin-right: 0;
   border-bottom: 0;
 }
-nav .nav-mobile-site .mob-sidenav .user-pic {
+nav .nav-mobile-site .mob-sidenav .user {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0 20px 0;
+  margin: 30px auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .nav-mobile-site .mob-sidenav .user img {
   height: 100px;
   width: 100px;
-  padding: 20px 0 20px 0;
-  margin-bottom: 30px;
 }
-nav .nav-mobile-site .mob-sidenav .user-pic img {
-  width: 100%;
+nav .nav-mobile-site .mob-sidenav .user h4 {
+  color: #FFFFFF;
 }
 nav .nav-desktop-site {
   display: none;
@@ -727,6 +734,8 @@ nav .nav-desktop-site {
 }
 .header {
   position: relative;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 20%);
+  mix-blend-mode: normal;
 }
 .header h1 {
   background-color: #0905D5;
