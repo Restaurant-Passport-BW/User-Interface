@@ -328,6 +328,11 @@ a:visited {
   text-align: center;
   margin: 5% 0 5% 0;
 }
+@media (min-width: 800px) {
+  .info p {
+    font-size: 2rem;
+  }
+}
 section {
   margin: 3%;
   padding: 3%;
@@ -848,6 +853,15 @@ nav .nav-desktop-site {
 }
 .header img {
   width: 100%;
+}
+.header .rp-logo {
+  width: 30%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.header .rp-logo img {
+  transform: rotate(15deg);
 }
 .header .checktours-button {
   position: absolute;
