@@ -260,22 +260,16 @@ a:visited {
 .container h5 {
   font-size: 1.8rem;
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   .container .contentainer {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
 }
-.header h1 {
-  background-color: #0905D5;
-}
-.header p {
-  padding: 20px;
-  text-align: center;
-  font-size: 2rem;
-}
-.header img {
-  width: 100%;
+@media (min-width: 1000px) {
+  .container .contentainer {
+    width: 60%;
+  }
 }
 .about-us-content {
   display: flex;
@@ -296,19 +290,31 @@ a:visited {
   border-radius: 3px;
   box-shadow: 0px 0px 2px 2px lightgray;
 }
+@media (min-width: 800px) {
+  .about-us-content .team-member {
+    width: 600px;
+    height: 600px;
+  }
+}
 @media (min-width: 1000px) {
   .about-us-content .team-member {
-    width: 40%;
-    margin: 3%;
+    width: 49%;
   }
+}
+.about-us-content .team-member .pic-and-stamp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-us-content .team-member .pic-and-stamp .avatar {
+  width: 50%;
+}
+.about-us-content .team-member .pic-and-stamp .pass-stamp {
+  width: 40%;
 }
 .about-us-content .team-member p {
   color: gray;
   margin: 5% 0 5% 0;
-}
-.about-us-content .team-member img {
-  height: 150px;
-  width: 150px;
 }
 .about-us-content .sociallink {
   display: flex;
@@ -583,24 +589,29 @@ nav .nav-mobile-site {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   nav .nav-mobile-site {
     display: none;
   }
 }
 nav .nav-mobile-site .logo {
-  width: 18%;
-  height: 18%;
+  width: 15%;
+  height: 15%;
   background-image: url '(../img/fp-logo.png)';
+}
+@media (min-width: 800px) {
+  nav .nav-mobile-site .logo {
+    width: 10%;
+    height: 10%;
+  }
 }
 nav .nav-mobile-site .logo img {
   height: 100%;
   width: 100%;
 }
 nav .nav-mobile-site .title h1 {
-  font-family: 'Amatic SC', cursive;
   color: black;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding: 0;
 }
 nav .nav-mobile-site .nav-opener {
@@ -611,6 +622,13 @@ nav .nav-mobile-site .nav-opener {
   flex-direction: column;
   align-content: center;
   cursor: pointer;
+}
+@media (min-width: 800px) {
+  nav .nav-mobile-site .nav-opener {
+    width: 5%;
+    height: 5%;
+    margin: 0 2% 0 0;
+  }
 }
 nav .nav-mobile-site .nav-opener .nav-opener:hover {
   background-color: lightgray;
@@ -663,45 +681,90 @@ nav .nav-mobile-site .mob-sidenav .user-pic img {
 nav .nav-desktop-site {
   display: none;
 }
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   nav .nav-desktop-site {
-    display: block;
-    height: 100vh;
-    background: linear-gradient(rgba(138, 137, 137, 0.4), rgba(114, 114, 114, 0.4)), url("../img/team-header.jpg");
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #FFFFFF;
-    background-attachment: static;
-  }
-  nav .nav-desktop-site .oneline-nav {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(63, 51, 86, 0.6), rgba(63, 51, 86, 0.6));
   }
   nav .nav-desktop-site .title-desktop h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 4.8rem;
+    color: #FFF8E7;
+    font-size: 3.6rem;
   }
   nav .nav-desktop-site .menu-desktop {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
   nav .nav-desktop-site .menu-desktop a {
-    color: #FFFFFF;
-    font-size: 1.8rem;
-    margin: 3%;
+    color: #FFF8E7;
+    font-size: 1.6rem;
     text-align: center;
+    margin: 0 3% 0 3%;
   }
   nav .nav-desktop-site .menu-desktop a:hover {
-    color: #FFFFFF;
+    color: #FFF8E7;
   }
   nav .nav-desktop-site .menu-desktop a:visited {
-    color: #FFFFFF;
+    color: #FFF8E7;
+  }
+}
+@media (min-width: 1000px) {
+  nav .nav-desktop-site .title-desktop h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4.8rem;
+  }
+  nav .nav-desktop-site .menu-desktop a {
+    font-size: 1.7rem;
+  }
+}
+.header {
+  position: relative;
+}
+.header h1 {
+  background-color: #0905D5;
+}
+@media (min-width: 800px) {
+  .header h1 {
+    font-size: 4.8rem;
+    bottom: 2%;
+    left: 2%;
+    position: absolute;
+    background-color: transparent;
+  }
+}
+.header p {
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+.header img {
+  width: 100%;
+}
+.header .checktours-button {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
+}
+.header .checktours-button .checktours {
+  background-color: #3C38FC;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  margin: 0 auto;
+  border: 2px solid #3C38FC;
+  border-radius: 20px;
+  padding: 10px;
+}
+@media (min-width: 800px) {
+  .header .checktours-button .checktours {
+    font-size: 2rem;
+    padding: 15px;
   }
 }
