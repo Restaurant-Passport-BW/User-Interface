@@ -11,58 +11,60 @@
 
 <body class="about-us">
     <div class="container">
-
         <nav>
-        <div class="nav-mobile-site">
-            <span class="logo">
-                <img src="img/fp-logo.png" alt="restaurant passport logo">
-            </span>
-            <span class="title"><h1>RESTAURANT PASSPORT</h1></span>
-            <span class="nav-opener" onclick="openNav()">
-                <span class="nav-toggle-line"></span>
-                <span class="nav-toggle-line"></span>
-                <span class="nav-toggle-line"></span>
-            </span>
-            <div class="mob-sidenav" id="mob-sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <span class="user-pic"><img src="img/avatar.png" alt="User pic"></span>
-                <a href="#">Home</a>
-                <a href="#">My Passport</a>
-                <a href="#">Around the World</a>
-                <a href="#">Settings</a>
-                <a href="about.html">About Us</a>
-            </div>
-            <script>
-                    function openNav() {
-                      document.getElementById("mob-sidenav").style.width = "250px";
-                    }
-                    
-                    function closeNav() {
-                      document.getElementById("mob-sidenav").style.width = "0";
-                    }
-            </script>
-        </div>
-        <div class="nav-desktop-site">
-            <span class="logo">
-                <img src="img/fp-logo.png" alt="restaurant passport logo">
+            <div class="nav-mobile-site">
+                <span class="logo">
+                    <img src="img/fp-logo.png" alt="restaurant passport logo">
                 </span>
-            <span class="nav-desktop-header-and-menu">
-            <span class="title"><h1>RESTAURANT PASSPORT</h1></span>
-            <span class="menu">
-                <a href="#">Home</a>
-                <a href="#">My Passport</a>
-                <a href="#">Around the World</a>
-                <a href="#">Settings</a>
-                <a href="about.html">About Us</a>
-            </span>
-            </span>
-        </div>
-        </nav>
+                <span class="title">
+                    <h1>RESTAURANT PASSPORT</h1>
+                </span>
+                <div class="mob-sidenav" id="mymob-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="user-pic"><img src="img/avatar.png" alt="User pic"></div>
+                    <a href="#">Home</a>
+                    <a href="#">My Passport</a>
+                    <a href="#">Around the World</a>
+                    <a href="#">Settings</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <span class="nav-opener" onclick="openNav()">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </span>
 
-        <header class="about-us-header">
+                <script>
+                    function openNav() {
+                        document.getElementById("mymob-sidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mymob-sidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            <div class="nav-desktop-site" id="about">
+                <div class="oneline-nav">
+                    <span class="title-desktop">
+                        <h1>RESTAURANT PASSPORT</h1>
+                    </span>
+
+                    <span class="menu-desktop">
+                        <a href="homepage.html">Home</a>
+                        <a href="#">My Passport</a>
+                        <a href="#">Around the World</a>
+                        <a href="#">Settings</a>
+                        <a href="about.html">About Us</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
             <h1>About Us</h1>
             <p>Meet the team behind this awesomeness!</p>
         </header>
+        <div class="contentainer">
         <section class="about-us-content">
             <div class="team-member" id="shannon">
                 <img src="img/avatar.png" alt="Shannon's picture">
@@ -71,6 +73,29 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate
                         omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod
                         aperiam in asperiores dolores!</p>
+                    <div class="sociallink">
+                        <span class="github">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="github logo">
+                            </a>
+                        </span>
+                        <span class="facebook">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="#">
+                                <img src="img/linkedin.png" alt="linkedin logo">
+                            </a>
+                        </span>
+                        <span class="twitter">
+                            <a href="#">
+                                <img src="img/twitter.png" alt="twitter logo">
+                            </a>
+                        </span>
+                        <span class="instagram"><img src="img/instagram.png" alt="instagram logo"></span>
+                    </div>
             </div>
             <div class="team-member" id="ivan">
                 <img src="img/avatar.png" alt="Ivan's picture">
@@ -79,6 +104,29 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate
                         omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod
                         aperiam in asperiores dolores!</p>
+                    <div class="sociallink">
+                        <span class="github">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="github logo">
+                            </a>
+                        </span>
+                        <span class="facebook">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="#">
+                                <img src="img/linkedin.png" alt="linkedin logo">
+                            </a>
+                        </span>
+                        <span class="twitter">
+                            <a href="#">
+                                <img src="img/twitter.png" alt="twitter logo">
+                            </a>
+                        </span>
+                        <span class="instagram"><img src="img/instagram.png" alt="instagram logo"></span>
+                    </div>
             </div>
             <div class="team-member" id="leza">
                 <img src="img/avatar.png" alt="Leza's picture">
@@ -87,6 +135,29 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate
                         omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod
                         aperiam in asperiores dolores!</p>
+                    <div class="sociallink">
+                        <span class="github">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="github logo">
+                            </a>
+                        </span>
+                        <span class="facebook">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="#">
+                                <img src="img/linkedin.png" alt="linkedin logo">
+                            </a>
+                        </span>
+                        <span class="twitter">
+                            <a href="#">
+                                <img src="img/twitter.png" alt="twitter logo">
+                            </a>
+                        </span>
+                        <span class="instagram"><img src="img/instagram.png" alt="instagram logo"></span>
+                    </div>
             </div>
             <div class="team-member" id="luis">
                 <img src="img/avatar.png" alt="Luis picture">
@@ -95,14 +166,63 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate
                         omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod
                         aperiam in asperiores dolores!</p>
+                    <div class="sociallink">
+                        <span class="github">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="github logo">
+                            </a>
+                        </span>
+                        <span class="facebook">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="#">
+                                <img src="img/linkedin.png" alt="linkedin logo">
+                            </a>
+                        </span>
+                        <span class="twitter">
+                            <a href="#">
+                                <img src="img/twitter.png" alt="twitter logo">
+                            </a>
+                        </span>
+                        <span class="instagram"><img src="img/instagram.png" alt="instagram logo"></span>
+                    </div>
             </div>
             <div class="team-member" id="mashima">
                 <img src="img/avatar.png" alt="Mashima's picture">
                 <h3>Mashima Button</h2>
                     <h4>User Interface Developer</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod aperiam in asperiores dolores!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui commodi, eius voluptate
+                        omnis, temporibus repudiandae hic minima eum cumque a vel explicabo repellat, quidem quod
+                        aperiam in asperiores dolores!</p>
+                    <div class="sociallink">
+                        <span class="github">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="github logo">
+                            </a>
+                        </span>
+                        <span class="facebook">
+                            <a href="#">
+                                <img src="img/facebook.png" alt="">
+                            </a>
+                        </span>
+                        <span class="linkedin">
+                            <a href="#">
+                                <img src="img/linkedin.png" alt="linkedin logo">
+                            </a>
+                        </span>
+                        <span class="twitter">
+                            <a href="#">
+                                <img src="img/twitter.png" alt="twitter logo">
+                            </a>
+                        </span>
+                        <span class="instagram"><img src="img/instagram.png" alt="instagram logo"></span>
+                    </div>
             </div>
         </section>
+        </div>
         <footer>
         </footer>
     </div>

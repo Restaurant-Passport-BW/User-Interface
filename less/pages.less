@@ -1,8 +1,11 @@
 
 //main container
 .container{
-    @media @desktop{
-        width: 60%;
+    width: 500px;
+    margin: 0 auto;
+    
+    @media @tablet{
+        width: 100%;
         margin: 0 auto;
     }
     h1{
@@ -16,27 +19,43 @@
     h4,h5{
         font-size: 1.8rem;
     }
+
+    .contentainer{
+        @media @desktop{
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
 }
 
 
 
-//about us page
-.about-us-header{
+
+//every page header
+.header{
     h1{
-        background-color: #055492;
+        background-color: @primary1;
     }
     p {
         padding: 20px;
         text-align: center;
         font-size: 2rem;
     }
-}
+
+    img{
+        width: 100%;
+    }
+    
+}// close header
+
+//about page styles
+
 .about-us-content{
     display: flex;
     flex-direction: column;
     padding: 3%;
 
-    @media @desktop{
+    @media @tablet{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -64,18 +83,27 @@
         }
 
     }//closes team-member
+
+    .sociallink{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        span{
+            width: 40px;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }// closes about-us-content
 
-//main page
+// end of about us page style
 
-.main-page-header{
-    h1{
-        background-color: @primary1;
-    }
-    img{
-        width: 100%;
-    }
-}// close main-page-header
+
+//main page
 
 .content{
     padding: 2%;

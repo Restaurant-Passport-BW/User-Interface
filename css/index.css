@@ -188,7 +188,7 @@ a:visited {
   background-attachment: static;
   padding: 30% 0 20% 0;
 }
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .landing-page .landing-header {
     padding: 5%;
   }
@@ -198,7 +198,7 @@ a:visited {
   color: black;
   padding: 10%;
 }
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .landing-page .landingpage-moreinfo {
     padding: 2%;
   }
@@ -237,9 +237,13 @@ a:visited {
 .landing-page footer {
   text-align: center;
 }
-@media (min-width: 900px) {
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
   .container {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -256,20 +260,29 @@ a:visited {
 .container h5 {
   font-size: 1.8rem;
 }
-.about-us-header h1 {
-  background-color: #055492;
+@media (min-width: 1000px) {
+  .container .contentainer {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
-.about-us-header p {
+.header h1 {
+  background-color: #0905D5;
+}
+.header p {
   padding: 20px;
   text-align: center;
   font-size: 2rem;
+}
+.header img {
+  width: 100%;
 }
 .about-us-content {
   display: flex;
   flex-direction: column;
   padding: 3%;
 }
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .about-us-content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -283,7 +296,7 @@ a:visited {
   border-radius: 3px;
   box-shadow: 0px 0px 2px 2px lightgray;
 }
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
   .about-us-content .team-member {
     width: 40%;
     margin: 3%;
@@ -297,11 +310,17 @@ a:visited {
   height: 150px;
   width: 150px;
 }
-.main-page-header h1 {
-  background-color: #0905D5;
+.about-us-content .sociallink {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
-.main-page-header img {
+.about-us-content .sociallink span {
+  width: 40px;
+}
+.about-us-content .sociallink span img {
   width: 100%;
+  height: auto;
 }
 .content {
   padding: 2%;
@@ -564,7 +583,7 @@ nav .nav-mobile-site {
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   nav .nav-mobile-site {
     display: none;
   }
@@ -644,45 +663,45 @@ nav .nav-mobile-site .mob-sidenav .user-pic img {
 nav .nav-desktop-site {
   display: none;
 }
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   nav .nav-desktop-site {
+    display: block;
+    height: 100vh;
+    background: linear-gradient(rgba(138, 137, 137, 0.4), rgba(114, 114, 114, 0.4)), url("../img/team-header.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-attachment: static;
+  }
+  nav .nav-desktop-site .oneline-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   }
-}
-nav .nav-desktop-site .logo {
-  width: 30%;
-  height: 30%;
-}
-nav .nav-desktop-site .logo img {
-  width: 100%;
-  height: 100%;
-}
-nav .nav-desktop-site .title h1 {
-  font-family: 'Amatic SC', cursive;
-  color: black;
-  font-size: 6rem;
-  padding: 0;
-}
-nav .nav-desktop-site .nav-desktop-header-and-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-nav .nav-desktop-site .nav-desktop-header-and-menu .menu {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  width: 100%;
-}
-nav .nav-desktop-site .nav-desktop-header-and-menu .menu a {
-  width: 200px;
-  font-size: 2rem;
-  padding: 1%;
-  margin: 2%;
+  nav .nav-desktop-site .title-desktop h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4.8rem;
+  }
+  nav .nav-desktop-site .menu-desktop {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  nav .nav-desktop-site .menu-desktop a {
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    margin: 3%;
+    text-align: center;
+  }
+  nav .nav-desktop-site .menu-desktop a:hover {
+    color: #FFFFFF;
+  }
+  nav .nav-desktop-site .menu-desktop a:visited {
+    color: #FFFFFF;
+  }
 }
