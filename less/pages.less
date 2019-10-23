@@ -22,12 +22,12 @@
 
     .contentainer{
         @media @tablet{
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
         }
 
         @media @desktop{
-            width: 70%;
+            width: 60%;
         }
     }
 }
@@ -43,23 +43,27 @@
     @media @tablet{
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .team-member{
-        margin: 5% 2% 5% 2%;
+        width: 450px;
+        margin: 3% auto;
         padding: 3%;
         border: 1px solid lightgray;
         border-radius: 3px;
         box-shadow: 0px 0px 2px 2px lightgray;
 
+        .member-text{
+            padding: 3% 0 10% 0;
+        }
+
         @media @tablet{
-            width: 600px;
-            height: 600px;
+            width: 48%;
         }
 
         @media @desktop{
-            width: 49%;
+            width: 48%;
         }
 
 
@@ -74,13 +78,13 @@
 
             .pass-stamp{
                 width: 40%;
+                height: auto;
             }
             
         }
 
         p{
             color: gray;
-            margin: 5% 0 5% 0;
         }
 
 
@@ -105,6 +109,8 @@
 // end of about us page style
 
 
+
+
 //main page
 
 .content{
@@ -113,7 +119,7 @@
     .stamp{
         width:100%;
         max-height: 10%;
-        margin: 0 auto;
+        margin: 3% auto;
         box-shadow: 0px 0px 2px 2px lightgray;
 
         img{
@@ -125,6 +131,10 @@
 
     section{
         padding: 5%;
+
+        @media @tablet{
+            padding: 0;
+        }
     }
 
     .section-content{
@@ -137,6 +147,12 @@
         .explore-img{
             .box-wh(46%,10% 5% 10% 5%);
             .box-font();
+
+            @media @tablet{
+                width: 22%;
+                border-radius: 5px;
+                padding: 5% 2% 5% 2%;
+            }
         }//closes explore-img
             
         #popular{
@@ -250,7 +266,7 @@
 
                 h5{
                     color: black;
-                    padding: 3% 0 3% 0;
+                    padding: 3% 0 3% 1%;
                 }
 
                 .activity{
@@ -279,6 +295,7 @@
                 color: @neutral6;
                 margin: 0 auto;
                 border: 2px solid @primary2;
+                border-radius: 5px;
                 padding: 10px 10px 10px 10px;
             }
             p{
@@ -291,7 +308,27 @@
 
     }// closes .section-content
 
+    .lower-content{
 
+        @media @tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .stamps-world{
+            @media @tablet{
+                width: 47%;
+            }
+        }
+
+        .restaurants{
+
+            @media @tablet{
+                width: 47%;
+            }
+        }
+    }
 
 
 
