@@ -189,16 +189,23 @@ nav{
 
     }//closes nav-desktop-site
 
+    .landing-bottom-nav{
+        display: none;
+        @media @desktop{
+            display: flex;
+            justify-content: space-around;
+            font-size: 3rem;
+            background-color: neutral3;
+            color: @accent3;
+        }
+    }
+
 }//closes nav
 
 
 //every page header
 .header{
     position: relative;
-    background: 
-    linear-gradient(180deg, 
-    rgba(0, 0, 0, 0.8) 20%);
-    mix-blend-mode: normal;
 
     h1{
         background-color: @primary1;
@@ -240,5 +247,4 @@ nav{
             }
         }
     }
-    
 }// close header

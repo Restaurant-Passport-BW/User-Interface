@@ -55,7 +55,7 @@
         box-shadow: 0px 0px 2px 2px lightgray;
 
         .member-text{
-            padding: 3% 0 10% 0;
+            padding: 3% 0 5% 0;
         }
 
         @media @tablet{
@@ -85,6 +85,7 @@
 
         p{
             color: gray;
+            padding: 5% 0 5% 0;
         }
 
 
@@ -109,7 +110,62 @@
 // end of about us page style
 
 
+//info
 
+    .info{
+
+            h2{
+                font-size: 5rem;
+                font-family: @specialfont;
+                .text-center();
+            }
+            p{
+                font-size: 2.2rem;
+            }
+        }
+
+        p{
+            .text-center();
+            padding: 2%;
+        }
+
+        section{
+            margin: 3%;
+            padding: 3%;
+        }
+
+        .photos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .photo-container{
+                width: 90%;
+                height: 90%;
+                margin: 2%;
+                padding: 2%;
+                border-radius: 10px;
+                background-color: lightgray;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .signuptoday{
+            .sign-up{
+                background-color: @primary2;
+                font-size: 2rem;
+                color: @neutral6;
+                border-radius: 20px;
+                margin: 0 auto;
+                border: 2px solid @primary2;
+                padding: 10px 30px 10px 30px;
+            }
+        }
 
 //main page
 
@@ -331,6 +387,10 @@
     }
 
 
-
 }//closes content
+
+.footer{
+    background-color: @neutral4;
+    padding: 0;
+}
 

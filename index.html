@@ -12,31 +12,56 @@
 <body class="landing-page">
     <div class="main-container">
         <div class="landing-header">
-        <header>
-            <h1>Restaurant Passport</h1>
-            <h2>Travel the World of Foods</h2>
-        </header>
-        <section class="sign-up-button">
-            <button class="signup">Sign Up</button>
-            <p>Already have an account? <a href="#">Log In</a></p>
-        </section>
+            <header>
+                <h1>Restaurant Passport</h1>
+                <h2>Travel the World of Foods</h2>
+            </header>
+            <section class="sign-up-button">
+                <button class="signup">Sign Up</button>
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </section>
+            <div class="landing-bottom-nav">
+                <a href="home.html">Home</a>
+                <a href="info.html">About Restaurant Passport</a>
+                <a href="#">Log In</a>
+                <a href="about.html">About Us</a>
+            </div>
         </div>
-        <div class="landingpage-moreinfo">
-            <section class="about-rp">
-                <h2>What is Restaurant Passport?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit labore qui praesentium repudiandae sint eius laboriosam magni nemo aliquid id quis exercitationem fugiat, animi inventore officia, modi doloremque saepe voluptate.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit labore qui praesentium repudiandae sint eius laboriosam magni nemo aliquid id quis exercitationem fugiat, animi inventore officia, modi doloremque saepe voluptate.</p>
-            </section>
-            <section class="rp-gallery">
-                <h2>Show off your food pics like never before!</h2>
-                <div class="photos">
-                <span class="photo-container"><img src="img/food-pic1.jpg" alt="Food"></span>
+        <footer class="landing-footer">
+            <nav>
+                <div class="nav-mobile-site">
+                    <span class="logo">
+                        <img src="img/fp-logo.png" alt="restaurant passport logo">
+                    </span>
+                    <span class="title">
+                        <h1>RESTAURANT PASSPORT</h1>
+                    </span>
+                    <div class="mob-sidenav" id="mymob-sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="home.html">Home</a>
+                        <a href="info.html">About RP</a>
+                        <a href="#">Log In</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                    <span class="nav-opener" onclick="openNav()">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </span>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mymob-sidenav").style.width = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mymob-sidenav").style.width = "0";
+                        }
+                    </script>
                 </div>
-            </section>
-        <footer>
-            <p>Copyright 2019 - Restaurant Passport</p>
+
+            </nav>
         </footer>
-    </div>
     </div>
 </body>
 
