@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Passport</title>
+</head>
+
+<body class="landing-page">
+    <div class="main-container">
+        <div class="landing-header">
+            <header>
+                <h1>Restaurant Passport</h1>
+                <h2>Travel the World of Foods</h2>
+            </header>
+            <section class="sign-up-button">
+                <a class="cta-button" href="#"><button class="signup">Sign Up</button></a>
+                <p>Already have an account? <a href="#">Log In</a></p>
+            </section>
+            <div class="landing-bottom-nav">
+                <a href="info.html">About Restaurant Passport</a>
+                <a href="home.html">Demo</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+        <div class="landing-footer">
+            <nav>
+                <div class="nav-mobile-site">
+                    <span class="logo">
+                        <img src="img/fp-logo.png" alt="restaurant passport logo">
+                    </span>
+                    <span class="title">
+                        <h1>RESTAURANT PASSPORT</h1>
+                    </span>
+                    <div class="mob-sidenav" id="mymob-sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="info.html">About Restaurant Passport</a>
+                        <a href="home.html">Demo</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                    <span class="nav-opener" onclick="openNav()">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </span>
+
+                    <script>
+                        function openNav() {
+                            document.getElementById("mymob-sidenav").style.width = "250px";
+                        }
+
+                        function closeNav() {
+                            document.getElementById("mymob-sidenav").style.width = "0";
+                        }
+                    </script>
+                </div>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>

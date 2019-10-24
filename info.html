@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-mobile-site">
+                <span class="logo">
+                    <img src="img/fp-logo.png" alt="restaurant passport logo">
+                </span>
+                <span class="title">
+                    <h1>RESTAURANT PASSPORT</h1>
+                </span>
+                <div class="mob-sidenav" id="mymob-sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="info.html">About Restaurant Passport</a>
+                    <a href="home.html">Demo</a>
+                    <a href="about.html">About Us</a>
+                </div>
+                <span class="nav-opener" onclick="openNav()">
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                    <span class="nav-toggle-line"></span>
+                </span>
+
+                <script>
+                    function openNav() {
+                        document.getElementById("mymob-sidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mymob-sidenav").style.width = "0";
+                    }
+                </script>
+            </div>
+            <div class="nav-desktop-site">
+                <span class="title-desktop">
+                    <h1>RESTAURANT PASSPORT</h1>
+                </span>
+
+                <span class="menu-desktop">
+                    <a href="info.html">About Restaurant Passport</a>
+                    <a href="home.html">Demo</a>
+                    <a href="about.html">About Us</a>
+                </span>
+            </div>
+        </nav>
+        <header class="header">
+            <h1>Favorite Passport for Foodies</h1>
+            <img src="img/header-pic2.jpg" alt="food image">
+            <span class="rp-logo"><img src="img/fp-logo.png" alt="Restaurant Passport Logo"></span>
+        </header>
+
+        <div class="contentainer">
+            <div class="info">
+                <section class="about-rp">
+                    <h2>Easiest way to find a restaurant!</h2>
+                    <p>Forget about that fastfood restaurant right around your house. You can now find any top-rated restaurants in your city at your fingertip! You don't even have even go on Google or Yelp for reviews anymore because we do all of that hard work for you! </p>
+                    <div class="photos">
+                        <span class="photo-container"><img src="img/food-pic1.jpg" alt="Food"></span>
+                    </div>
+                    <h2>Find A Best Pick for Any Occasion!</h2>
+                    <p>Whether you want cheap eat, where to have team lunch, or a romantic dinner date, Restaurant Passport can help you pick where to eat in no time!</p>
+                    <div class="photos">
+                        <span class="photo-container"><img src="img/food-pic3.jpg" alt="Food"></span>
+                    </div>
+                    <h2>Stamp it on your passport and show it off!</h2>
+                    <p>Wouldn't it be nice if you can just make something like a restaurant diary of where you had already been to? Guess what? Nothing beats the feeling of having that sweet stamp on your passport.</p>
+                    <div class="photos">
+                        <span class="photo-container"><img src="img/passport-stamps.jpg" alt="Passport Stamp"></span>
+                    </div>
+                </section>
+                <section class="signuptoday">
+                        <h2>Sign Up Today</h2>
+                        <p>Join our fun community and grab some bite!</p>
+                        <a class="cta-button" href="#"><button class="sign-up">Sign Up</button></a>
+                </section>
+
+            </div>
+        </div>
+        <footer>
+            <p>Copyright 2019 - Restaurant Passport Team</p>
+        </footer>
+    </div>
+</body>
+
+</html>

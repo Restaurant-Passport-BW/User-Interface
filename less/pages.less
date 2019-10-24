@@ -1,0 +1,421 @@
+
+//main container
+.container{
+    width: 500px;
+    margin: 0 auto;
+    
+    @media @tablet{
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1{
+        font-size: 2rem;
+        padding: 5px 0 5px 20px;
+        color: @neutral6;
+    }
+    h2,h3{
+        font-size: 2rem;
+    }
+    h4,h5{
+        font-size: 1.8rem;
+    }
+
+    .contentainer{
+        @media @tablet{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        @media @desktop{
+            width: 60%;
+        }
+    }
+}
+
+
+//about page styles
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+
+    @media @tablet{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team-member{
+        width: 450px;
+        margin: 3% auto;
+        padding: 3%;
+        border: 1px solid lightgray;
+        border-radius: 3px;
+        box-shadow: 0px 0px 2px 2px lightgray;
+
+        .member-text{
+            text-align: left;
+            padding: 3% 0 5% 0;
+        }
+
+        @media @tablet{
+            width: 48%;
+        }
+
+        @media @desktop{
+            width: 48%;
+        }
+
+
+        .pic-and-stamp{
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .avatar{
+                width: 50%;
+            }
+
+            .pass-stamp{
+                width: 50%;
+                position: absolute;
+                top: 18%;
+                left: 50%;
+                transform: rotate(35deg);
+            }
+            
+        }
+
+        #mashima{
+            transform: rotate(65deg);
+        }
+
+        p{
+            color: gray;
+            padding: 5% 0 5% 0;
+        }
+
+
+    }//closes team-member
+
+    .sociallink{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        span{
+            width: 40px;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}// closes about-us-content
+
+// end of about us page style
+
+
+//info
+
+    .info{
+
+            h2{
+                font-size: 5rem;
+                font-family: @specialfont;
+                .text-center();
+                margin-top: 5%;
+            }
+            p{
+                font-size: 1.8rem;
+                .text-center();
+                margin: 5% 0 5% 0;
+
+                @media @tablet{
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        section{
+            margin: 3%;
+            padding: 3%;
+        }
+
+        .photos{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .photo-container{
+                width: 90%;
+                height: 90%;
+                margin: 2%;
+                padding: 2%;
+                border-radius: 10px;
+                background-color: lightgray;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        .signuptoday{
+            .text-center();
+            .sign-up{
+                .button-radius(20px);
+                font-size: 2rem;
+                margin: 3% auto;
+                border: 2px solid @primary2;
+                padding: 10px 30px 10px 30px;
+            }
+        }
+
+//main page
+
+.content{
+    padding: 2%;
+
+    .stamp{
+        width:100%;
+        max-height: 10%;
+        overflow: hidden;
+        margin: 3% auto;
+        box-shadow: 0px 0px 5px 5px lightgray;
+        border-radius: 20px;
+        }
+
+        img{
+            width:100%;
+            
+    }
+
+    section{
+        padding: 5%;
+
+        @media @tablet{
+            padding: 0;
+        }
+    }
+
+    .section-content{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        
+
+        .explore-img{
+            .box-wh(46%,10% 5% 10% 5%);
+            .box-font();
+
+            @media @tablet{
+                width: 22%;
+                border-radius: 5px;
+                padding: 5% 2% 5% 2%;
+                font-size: 1.8rem;
+            }
+        }//closes explore-img
+            
+        #popular{
+            .background-img(url("../img/popular-img.jpg"));
+        }
+
+         #tours{
+            .background-img(url("../img/tour-img.jpg"));
+        }
+
+         #tasting{
+            .background-img(url("../img/tasting-img.jpg"));
+        }
+
+        #wine-beer{
+            .background-img(url("../img/wine-beer-img.jpg"));
+        }
+
+        //country
+
+        #mexico{
+            .background-img(url("../img/flag-mexico.png"));
+        }
+
+        #italy{
+            .background-img(url("../img/flag-italy.jpg"));
+        }
+        #usa{
+            .background-img(url("../img/flag-usa.png"));
+        }
+        #germany{
+            .background-img(url("../img/flag-germany.png"));
+        }
+        #pr{
+            .background-img(url("../img/flag-puertorico.png"));
+        }
+        #india{
+            .background-img(url("../img/flag-india.jpg"));
+        }
+        #greece{
+            .background-img(url("../img/flag-greece.png"));
+        }
+        #china{
+            .background-img(url("../img/flag-china.png"));
+        }
+
+        .world-img{
+            .box-wh(46%,3%);
+            .box-font();
+
+            @media @tablet{
+                font-size: 2rem;
+            }
+        }//closes world-img
+
+        #popular{
+            .background-img(url("../img/popular-img.jpg"));
+        }
+
+         #tours{
+            .background-img(url("../img/tour-img.jpg"));
+        }
+
+         #tasting{
+            .background-img(url("../img/tasting-img.jpg"));
+        }
+
+        #wine-beer{
+            .background-img(url("../img/wine-beer-img.jpg"));
+        }
+
+        //country
+
+        #mexico{
+            .background-img(url("../img/flag-mexico.png"));
+        }
+
+        #italy{
+            .background-img(url("../img/flag-italy.jpg"));
+        }
+        #usa{
+            .background-img(url("../img/flag-usa.png"));
+        }
+        #germany{
+            .background-img(url("../img/flag-germany.png"));
+        }
+        #pr{
+            .background-img(url("../img/flag-puertorico.png"));
+        }
+        #india{
+            .background-img(url("../img/flag-india.jpg"));
+        }
+        #greece{
+            .background-img(url("../img/flag-greece.png"));
+        }
+        #china{
+            .background-img(url("../img/flag-china.png"));
+        }    
+        
+        .restaurant-box{
+            .box-wh(100%,0);
+            height: 40%;
+            border-radius: 15px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0px 0px 5px 5px lightgray;
+            margin: 3% 0 3% 0;
+
+            img{
+                max-width: 100%;
+            }
+
+            .activity-text{
+                padding: 3%;
+                color: gray;
+
+                h5{
+                    color: black;
+                    padding: 3% 0 3% 1%;
+                }
+
+                .activity{
+                    p{
+                     font-size: 1.4rem; 
+                    }
+                }
+                .activity-detail{
+                    p{
+                    font-size: 1.6rem;
+                    padding-bottom: 20px;
+                    }
+                }
+            }
+
+            .icon-and-button{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 3%;
+                align-items: center;
+
+                .money-and-car{
+                    width: 20%;
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+
+                }
+            }
+
+            .readmore{
+                .button-radius(5px);
+                font-size: 1.4rem;
+                padding: 10px;
+            }
+            p{
+                padding: 5px;
+            }
+        }// closes restaurant-box;
+
+
+
+
+    }// closes .section-content
+
+    .lower-content{
+
+        @media @tablet{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .stamps-world{
+            @media @tablet{
+                width: 47%;
+            }
+        }
+
+        .restaurants{
+
+            @media @tablet{
+                width: 47%;
+            }
+        }
+    }
+
+
+}//closes content
+
+footer{
+    background-color: @neutral4;
+    padding: 5px 0 5px 0;
+    p {
+        .text-center();
+    }
+}
+

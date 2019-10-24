@@ -1,0 +1,252 @@
+nav{
+    .nav-mobile-site{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media @desktop{
+            display: none;
+        } // closes media desktop for nav-mobile-site
+
+        .logo{
+            width: 15%;
+            height: 15%;
+            background-image: url'(../img/fp-logo.png)';
+
+            @media @tablet{
+                width: 10%;
+                height: 10%;
+            }
+
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }//closes logo
+
+        .title{
+            h1{
+                color: black;
+                font-size: 2.5rem;
+                padding: 0;
+            }
+        }
+
+        .nav-opener{
+            width: 7%;
+            height: 10%;
+            margin: 3%;
+            display:flex;
+            flex-direction:column;
+            align-content: center;
+            cursor: pointer;
+
+            @media @tablet{
+                width: 5%;
+                height: 5%;
+                margin: 0 2% 0 0;
+            }
+
+            .nav-opener:hover{
+                background-color: lightgray;
+            }
+
+            .nav-toggle-line{
+                border-bottom: 2px solid gray;
+                padding: 7%;
+            }
+        }// close nav-opener
+
+        .mob-sidenav{
+            height: 100%;
+            width: 0;
+            z-index: 999;
+            top: 0;
+            right: 0;
+            position: fixed;
+            background-color: #222222;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 5%;
+
+            a{
+                padding: 5% 2% 2% 10%;
+                margin: 0 10% 0 10%;
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: gray;
+                display: block;
+                transition: 0.3s;
+                border-bottom: 1px solid gray;
+            }
+
+            a:hover{
+                color: white;
+
+            }
+            .closebtn {
+                position: absolute;
+                top: 0%;
+                right: 5%;
+                font-size: 3.6rem;
+                margin-right: 0;
+                border-bottom: 0;
+            }
+
+            .user{
+                display: flex;
+                flex-direction: row;
+                padding: 20px 0 20px 0;
+                margin: 30px auto;
+                justify-content: space-evenly;
+                align-items: center;
+
+                img{
+                    height: 100px;
+                    width: 100px;
+                }
+
+                h4{
+                    color: @neutral6;
+                }
+            }
+
+
+        }// close mob-sidenav
+
+        
+    }// closes nav-mobile-site
+
+
+    .nav-desktop-site{
+        display: none;
+
+        @media @desktop{
+            width: 100%;
+            z-index: 999;
+            position: fixed;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background:
+            linear-gradient(
+            rgba(63, 51, 86, 0.6), 
+            rgba(63, 51, 86, 0.6)
+            );
+
+            .title-desktop{
+                h1{
+                    font-family: @specialfont;
+                    color: @accent3;
+                    font-size: 3.6rem;
+                }
+            }
+
+            .menu-desktop{
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+
+                a{
+                    color: @accent3;
+                    font-size: 1.6rem;
+                    text-align: center;
+                    margin: 0 3% 0 3%;
+                }
+
+                a:hover{
+                    color: @accent3;
+                }
+                a:visited{
+                    color: @accent3;
+                }
+            }// closes menu-desktop
+        }// closes media tablet
+
+        @media @desktop{
+
+            .title-desktop{
+                h1{
+                    font-family: @specialfont;
+                    font-size: 4.8rem;
+                }
+            }
+            .menu-desktop{
+                a{
+                    font-size: 1.7rem;
+                }
+                
+            }//closes menu-desktop
+
+        }// closes media desktop
+        
+
+        
+
+
+    }//closes nav-desktop-site
+
+
+
+}//closes nav
+
+
+//every page header
+.header{
+    position: relative;
+    max-height: 100vh;
+    overflow: hidden;
+
+    h1{
+        background-color: @primary1;
+
+        @media @tablet{
+            font-size: 3.6rem;
+            bottom: 2%;
+            left: 2%;
+            position: absolute;
+            background-color: transparent;
+        }
+    }
+    p {
+        padding: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    img{
+        width: 100%;
+
+    }
+
+    .rp-logo{
+        width: 30%;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+
+        img{
+            transform: rotate(15deg);
+        }
+    }
+
+    .checktours-button{
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        .checktours{
+            .button-radius(20px);
+            font-size: 1.4rem;
+            margin: 0 auto;
+            padding: 10px;
+
+            @media @tablet{
+                font-size: 2rem;
+                padding: 15px;
+            }
+        }
+    }
+}// close header
