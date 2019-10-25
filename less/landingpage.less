@@ -10,7 +10,11 @@
     }
 
     .sign-up-button{
-        margin-top: 10%;;
+        margin-top: 10%;
+
+        @media @desktop{
+            margin-top: 5%;
+        }
         .text-center();
         .signup{
             .button-radius(20px);
@@ -36,11 +40,14 @@
         background-position: center;
         background-repeat: no-repeat;
         color: @neutral6;
-        background-attachment: static;
         padding: 30% 0 20% 0;
 
         @media @tablet{
-            padding: 5% 0 0 0;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            padding: 0;
         }
 
         .landing-bottom-nav{
